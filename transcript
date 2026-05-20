@@ -1,0 +1,847 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:38 on May 18,2026
+# vlog -reportprogress 300 AluControl.sv D_FF.sv D_FF16.sv D_FF32.sv D_FF4.sv D_FF5.sv D_FF64.sv D_FF_enable.sv D_FF_enable_neg.sv D_FF_neg.sv alu.sv bicep_testbench.sv bitSlice.sv branchingAdd.sv branchingLogic.sv cbz_FU.sv control.sv datamem.sv decoder2_4.sv decoder3_8.sv decoder5_32.sv dedALU4.sv ex_mem_reg.sv flagRegisters.sv forwarding_unit.sv fullAdder.sv halfAdder.sv hazard_detection_unit.sv id_ex_reg.sv if_id_reg.sv instructmem.sv math.sv mem_wb_reg.sv mux2_1.sv mux32_1.sv mux4_1.sv mux64_32_1.sv mux8_1.sv pcAdder4_tb.sv program_counter.sv quad.sv quad_og.sv quad_testbench.sv regfile.sv register_array.sv signExtender.sv zero_detector.sv 
+# -- Compiling module AluControl
+# -- Compiling module D_FF
+# -- Compiling module D_FF16
+# -- Compiling module D_FF32
+# -- Compiling module D_FF4
+# -- Compiling module D_FF5
+# -- Compiling module D_FF64
+# -- Compiling module D_FF_enable
+# -- Compiling module D_FF_enable_tb
+# -- Compiling module D_FF_enable_neg
+# -- Compiling module D_FF_neg
+# -- Compiling module alu
+# -- Compiling module bicep_testbench
+# -- Compiling module bitSlice
+# -- Compiling module branchingAdd
+# -- Compiling module branchingLogic
+# -- Compiling module cbz_FU
+# -- Compiling module control
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_tb
+# -- Compiling module decoder3_8
+# -- Compiling module decoder3_8_tb
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module dedALU4
+# -- Compiling module dedALU4_testbench
+# -- Compiling module ex_mem_reg
+# -- Compiling module forwarding_unit
+# -- Compiling module fullAdder
+# -- Compiling module halfAdder
+# -- Compiling module hazard_detection_unit
+# -- Compiling module id_ex_reg
+# -- Compiling module if_id_reg
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module mem_wb_reg
+# -- Compiling module mux2_1
+# -- Compiling module mux32_1
+# -- Compiling module mux32_1_tb
+# -- Compiling module mux4_1
+# -- Compiling module mux64_32_1
+# -- Compiling module mux8_1
+# -- Compiling module pcAdder4_tb
+# -- Compiling module program_counter
+# -- Compiling module quad
+# -- Compiling module quad_og
+# -- Compiling module quad_testbench
+# -- Compiling module regfile
+# -- Compiling module register_array
+# -- Compiling module signExtender
+# -- Compiling module signExtender_tb
+# -- Compiling module zero_detector
+# 
+# Top level modules:
+# 	D_FF_enable_tb
+# 	bicep_testbench
+# 	datamem_testbench
+# 	decoder2_4_tb
+# 	decoder3_8_tb
+# 	decoder5_32_tb
+# 	dedALU4_testbench
+# 	instructmem_testbench
+# 	shifter_testbench
+# 	mult_testbench
+# 	mux32_1_tb
+# 	pcAdder4_tb
+# 	quad_og
+# 	quad_testbench
+# 	register_array
+# 	signExtender_tb
+# End time: 21:57:39 on May 18,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work quad_testbench 
+# Start time: 21:57:39 on May 18,2026
+# Loading sv_std.std
+# Loading work.quad_testbench
+# Loading work.quad
+# Loading work.D_FF_enable
+# Loading work.D_FF
+# Loading work.program_counter
+# Loading work.D_FF32
+# Loading work.D_FF16
+# Loading work.D_FF4
+# Loading work.instructmem
+# Loading work.dedALU4
+# Loading work.halfAdder
+# Loading work.if_id_reg
+# Loading work.D_FF64
+# Loading work.signExtender
+# Loading work.mux2_1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.mux64_32_1
+# Loading work.control
+# Loading work.hazard_detection_unit
+# Loading work.cbz_FU
+# Loading work.zero_detector
+# Loading work.branchingAdd
+# Loading work.shifter
+# Loading work.alu
+# Loading work.branchingLogic
+# Loading work.id_ex_reg
+# Loading work.D_FF5
+# Loading work.forwarding_unit
+# Loading work.mux4_1
+# Loading work.AluControl
+# Loading work.ex_mem_reg
+# Loading work.datamem
+# Loading work.mem_wb_reg
+# Loading work.mux32_1
+# Loading work.mux8_1
+# Loading work.bitSlice
+# Loading work.fullAdder
+# ** Warning: (vsim-3017) quad.sv(397): [TFMPC] - Too few port connections. Expected 24, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /quad_testbench/dut/exmem File: ex_mem_reg.sv
+# ** Warning: (vsim-3722) quad.sv(397): [TFMPC] - Missing connection for port 'setFlags_in'.
+# ** Warning: (vsim-3722) quad.sv(397): [TFMPC] - Missing connection for port 'setFlags_out'.
+# ** Warning: Design size of 9921 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Hemil  Hostname: DESKTOP-QOI84KS  ProcessID: 17224
+#           Attempting to use alternate WLF file "./wlftkmqce1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkmqce1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: ./benchmarks/test11_Sort.arm
+# T=190.00 ns MEM_WRITE addr=0 data=10
+# T=230.00 ns MEM_WRITE addr=8 data=7
+# T=270.00 ns MEM_WRITE addr=16 data=4
+# T=310.00 ns MEM_WRITE addr=24 data=9
+# T=350.00 ns MEM_WRITE addr=32 data=3
+# T=390.00 ns MEM_WRITE addr=40 data=8
+# T=430.00 ns MEM_WRITE addr=48 data=2
+# T=470.00 ns MEM_WRITE addr=56 data=5
+# T=510.00 ns MEM_WRITE addr=64 data=6
+# T=550.00 ns MEM_WRITE addr=72 data=1
+# T=610.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=650.00 ns MEM_READ  addr=8 data=7
+# T=670.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=670.00 ns MEM_READ  addr=0 data=10
+# T=690.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=690.00 ns FLAG_INSTR_EX busA=10 busB=7 aluOut=3 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=710.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=790.00 ns MEM_WRITE addr=8 data=10
+# T=810.00 ns MEM_WRITE addr=0 data=7
+# T=830.00 ns SUBS_X1X0 fetched X1=0 X0=9
+# T=850.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=850.00 ns FLAG_INSTR_EX busA=1 busB=9 aluOut=18446744073709551608 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=870.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=950.00 ns MEM_READ  addr=16 data=4
+# T=970.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=970.00 ns MEM_READ  addr=8 data=10
+# T=990.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=990.00 ns FLAG_INSTR_EX busA=10 busB=4 aluOut=6 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=1010.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=1090.00 ns MEM_WRITE addr=16 data=10
+# T=1110.00 ns MEM_WRITE addr=8 data=4
+# T=1130.00 ns SUBS_X1X0 fetched X1=1 X0=9
+# T=1150.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=1150.00 ns FLAG_INSTR_EX busA=2 busB=9 aluOut=18446744073709551609 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=1170.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=1250.00 ns MEM_READ  addr=24 data=9
+# T=1270.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=1270.00 ns MEM_READ  addr=16 data=10
+# T=1290.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=1290.00 ns FLAG_INSTR_EX busA=10 busB=9 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=1310.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=1390.00 ns MEM_WRITE addr=24 data=10
+# T=1410.00 ns MEM_WRITE addr=16 data=9
+# T=1430.00 ns SUBS_X1X0 fetched X1=2 X0=9
+# T=1450.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=1450.00 ns FLAG_INSTR_EX busA=3 busB=9 aluOut=18446744073709551610 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=1470.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=1550.00 ns MEM_READ  addr=32 data=3
+# T=1570.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=1570.00 ns MEM_READ  addr=24 data=10
+# T=1590.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=1590.00 ns FLAG_INSTR_EX busA=10 busB=3 aluOut=7 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=1610.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=1690.00 ns MEM_WRITE addr=32 data=10
+# T=1710.00 ns MEM_WRITE addr=24 data=3
+# T=1730.00 ns SUBS_X1X0 fetched X1=3 X0=9
+# T=1750.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=1750.00 ns FLAG_INSTR_EX busA=4 busB=9 aluOut=18446744073709551611 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=1770.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=1850.00 ns MEM_READ  addr=40 data=8
+# T=1870.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=1870.00 ns MEM_READ  addr=32 data=10
+# T=1890.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=1890.00 ns FLAG_INSTR_EX busA=10 busB=8 aluOut=2 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=1910.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=1990.00 ns MEM_WRITE addr=40 data=10
+# T=2010.00 ns MEM_WRITE addr=32 data=8
+# T=2030.00 ns SUBS_X1X0 fetched X1=4 X0=9
+# T=2050.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=2050.00 ns FLAG_INSTR_EX busA=5 busB=9 aluOut=18446744073709551612 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=2070.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=2150.00 ns MEM_READ  addr=48 data=2
+# T=2170.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=2170.00 ns MEM_READ  addr=40 data=10
+# T=2190.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=2190.00 ns FLAG_INSTR_EX busA=10 busB=2 aluOut=8 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=2210.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=2290.00 ns MEM_WRITE addr=48 data=10
+# T=2310.00 ns MEM_WRITE addr=40 data=2
+# T=2330.00 ns SUBS_X1X0 fetched X1=5 X0=9
+# T=2350.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=2350.00 ns FLAG_INSTR_EX busA=6 busB=9 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=2370.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=2450.00 ns MEM_READ  addr=56 data=5
+# T=2470.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=2470.00 ns MEM_READ  addr=48 data=10
+# T=2490.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=2490.00 ns FLAG_INSTR_EX busA=10 busB=5 aluOut=5 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=2510.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=2590.00 ns MEM_WRITE addr=56 data=10
+# T=2610.00 ns MEM_WRITE addr=48 data=5
+# T=2630.00 ns SUBS_X1X0 fetched X1=6 X0=9
+# T=2650.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=2650.00 ns FLAG_INSTR_EX busA=7 busB=9 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=2670.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=2750.00 ns MEM_READ  addr=64 data=6
+# T=2770.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=2770.00 ns MEM_READ  addr=56 data=10
+# T=2790.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=2790.00 ns FLAG_INSTR_EX busA=10 busB=6 aluOut=4 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=2810.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=2890.00 ns MEM_WRITE addr=64 data=10
+# T=2910.00 ns MEM_WRITE addr=56 data=6
+# T=2930.00 ns SUBS_X1X0 fetched X1=7 X0=9
+# T=2950.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=2950.00 ns FLAG_INSTR_EX busA=8 busB=9 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=2970.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=3050.00 ns MEM_READ  addr=72 data=1
+# T=3070.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=3070.00 ns MEM_READ  addr=64 data=10
+# T=3090.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=3090.00 ns FLAG_INSTR_EX busA=10 busB=1 aluOut=9 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=3110.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=3190.00 ns MEM_WRITE addr=72 data=10
+# T=3210.00 ns MEM_WRITE addr=64 data=1
+# T=3230.00 ns SUBS_X1X0 fetched X1=8 X0=9
+# T=3250.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=3250.00 ns FLAG_INSTR_EX busA=9 busB=9 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=3270.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=3330.00 ns FLAG_INSTR_EX busA=9 busB=1 aluOut=8 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=3450.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=3490.00 ns MEM_READ  addr=8 data=4
+# T=3510.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=3510.00 ns MEM_READ  addr=0 data=7
+# T=3530.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=3530.00 ns FLAG_INSTR_EX busA=7 busB=4 aluOut=3 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=3550.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=3630.00 ns MEM_WRITE addr=8 data=7
+# T=3650.00 ns MEM_WRITE addr=0 data=4
+# T=3670.00 ns SUBS_X1X0 fetched X1=0 X0=8
+# T=3690.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=3690.00 ns FLAG_INSTR_EX busA=1 busB=8 aluOut=18446744073709551609 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=3710.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=3790.00 ns MEM_READ  addr=16 data=9
+# T=3810.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=3810.00 ns MEM_READ  addr=8 data=7
+# T=3830.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=3830.00 ns FLAG_INSTR_EX busA=7 busB=9 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=3850.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=3930.00 ns SUBS_X1X0 fetched X1=1 X0=8
+# T=3950.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=3950.00 ns FLAG_INSTR_EX busA=2 busB=8 aluOut=18446744073709551610 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=3970.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=4050.00 ns MEM_READ  addr=24 data=3
+# T=4070.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=4070.00 ns MEM_READ  addr=16 data=9
+# T=4090.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=4090.00 ns FLAG_INSTR_EX busA=9 busB=3 aluOut=6 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=4110.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=4190.00 ns MEM_WRITE addr=24 data=9
+# T=4210.00 ns MEM_WRITE addr=16 data=3
+# T=4230.00 ns SUBS_X1X0 fetched X1=2 X0=8
+# T=4250.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=4250.00 ns FLAG_INSTR_EX busA=3 busB=8 aluOut=18446744073709551611 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=4270.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=4350.00 ns MEM_READ  addr=32 data=8
+# T=4370.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=4370.00 ns MEM_READ  addr=24 data=9
+# T=4390.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=4390.00 ns FLAG_INSTR_EX busA=9 busB=8 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=4410.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=4490.00 ns MEM_WRITE addr=32 data=9
+# T=4510.00 ns MEM_WRITE addr=24 data=8
+# T=4530.00 ns SUBS_X1X0 fetched X1=3 X0=8
+# T=4550.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=4550.00 ns FLAG_INSTR_EX busA=4 busB=8 aluOut=18446744073709551612 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=4570.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=4650.00 ns MEM_READ  addr=40 data=2
+# T=4670.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=4670.00 ns MEM_READ  addr=32 data=9
+# T=4690.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=4690.00 ns FLAG_INSTR_EX busA=9 busB=2 aluOut=7 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=4710.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=4790.00 ns MEM_WRITE addr=40 data=9
+# T=4810.00 ns MEM_WRITE addr=32 data=2
+# T=4830.00 ns SUBS_X1X0 fetched X1=4 X0=8
+# T=4850.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=4850.00 ns FLAG_INSTR_EX busA=5 busB=8 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=4870.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=4950.00 ns MEM_READ  addr=48 data=5
+# T=4970.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=4970.00 ns MEM_READ  addr=40 data=9
+# T=4990.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=4990.00 ns FLAG_INSTR_EX busA=9 busB=5 aluOut=4 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=5010.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=5090.00 ns MEM_WRITE addr=48 data=9
+# T=5110.00 ns MEM_WRITE addr=40 data=5
+# T=5130.00 ns SUBS_X1X0 fetched X1=5 X0=8
+# T=5150.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=5150.00 ns FLAG_INSTR_EX busA=6 busB=8 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=5170.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=5250.00 ns MEM_READ  addr=56 data=6
+# T=5270.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=5270.00 ns MEM_READ  addr=48 data=9
+# T=5290.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=5290.00 ns FLAG_INSTR_EX busA=9 busB=6 aluOut=3 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=5310.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=5390.00 ns MEM_WRITE addr=56 data=9
+# T=5410.00 ns MEM_WRITE addr=48 data=6
+# T=5430.00 ns SUBS_X1X0 fetched X1=6 X0=8
+# T=5450.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=5450.00 ns FLAG_INSTR_EX busA=7 busB=8 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=5470.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=5550.00 ns MEM_READ  addr=64 data=1
+# T=5570.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=5570.00 ns MEM_READ  addr=56 data=9
+# T=5590.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=5590.00 ns FLAG_INSTR_EX busA=9 busB=1 aluOut=8 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=5610.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=5690.00 ns MEM_WRITE addr=64 data=9
+# T=5710.00 ns MEM_WRITE addr=56 data=1
+# T=5730.00 ns SUBS_X1X0 fetched X1=7 X0=8
+# T=5750.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=5750.00 ns FLAG_INSTR_EX busA=8 busB=8 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=5770.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=5830.00 ns FLAG_INSTR_EX busA=8 busB=1 aluOut=7 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=5950.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=5990.00 ns MEM_READ  addr=8 data=7
+# T=6010.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=6010.00 ns MEM_READ  addr=0 data=4
+# T=6030.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=6030.00 ns FLAG_INSTR_EX busA=4 busB=7 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=6050.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=6130.00 ns SUBS_X1X0 fetched X1=0 X0=7
+# T=6150.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=6150.00 ns FLAG_INSTR_EX busA=1 busB=7 aluOut=18446744073709551610 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=6170.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=6250.00 ns MEM_READ  addr=16 data=3
+# T=6270.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=6270.00 ns MEM_READ  addr=8 data=7
+# T=6290.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=6290.00 ns FLAG_INSTR_EX busA=7 busB=3 aluOut=4 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=6310.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=6390.00 ns MEM_WRITE addr=16 data=7
+# T=6410.00 ns MEM_WRITE addr=8 data=3
+# T=6430.00 ns SUBS_X1X0 fetched X1=1 X0=7
+# T=6450.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=6450.00 ns FLAG_INSTR_EX busA=2 busB=7 aluOut=18446744073709551611 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=6470.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=6550.00 ns MEM_READ  addr=24 data=8
+# T=6570.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=6570.00 ns MEM_READ  addr=16 data=7
+# T=6590.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=6590.00 ns FLAG_INSTR_EX busA=7 busB=8 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=6610.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=6690.00 ns SUBS_X1X0 fetched X1=2 X0=7
+# T=6710.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=6710.00 ns FLAG_INSTR_EX busA=3 busB=7 aluOut=18446744073709551612 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=6730.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=6810.00 ns MEM_READ  addr=32 data=2
+# T=6830.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=6830.00 ns MEM_READ  addr=24 data=8
+# T=6850.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=6850.00 ns FLAG_INSTR_EX busA=8 busB=2 aluOut=6 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=6870.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=6950.00 ns MEM_WRITE addr=32 data=8
+# T=6970.00 ns MEM_WRITE addr=24 data=2
+# T=6990.00 ns SUBS_X1X0 fetched X1=3 X0=7
+# T=7010.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=7010.00 ns FLAG_INSTR_EX busA=4 busB=7 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=7030.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=7110.00 ns MEM_READ  addr=40 data=5
+# T=7130.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=7130.00 ns MEM_READ  addr=32 data=8
+# T=7150.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=7150.00 ns FLAG_INSTR_EX busA=8 busB=5 aluOut=3 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=7170.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=7250.00 ns MEM_WRITE addr=40 data=8
+# T=7270.00 ns MEM_WRITE addr=32 data=5
+# T=7290.00 ns SUBS_X1X0 fetched X1=4 X0=7
+# T=7310.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=7310.00 ns FLAG_INSTR_EX busA=5 busB=7 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=7330.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=7410.00 ns MEM_READ  addr=48 data=6
+# T=7430.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=7430.00 ns MEM_READ  addr=40 data=8
+# T=7450.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=7450.00 ns FLAG_INSTR_EX busA=8 busB=6 aluOut=2 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=7470.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=7550.00 ns MEM_WRITE addr=48 data=8
+# T=7570.00 ns MEM_WRITE addr=40 data=6
+# T=7590.00 ns SUBS_X1X0 fetched X1=5 X0=7
+# T=7610.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=7610.00 ns FLAG_INSTR_EX busA=6 busB=7 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=7630.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=7710.00 ns MEM_READ  addr=56 data=1
+# T=7730.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=7730.00 ns MEM_READ  addr=48 data=8
+# T=7750.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=7750.00 ns FLAG_INSTR_EX busA=8 busB=1 aluOut=7 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=7770.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=7850.00 ns MEM_WRITE addr=56 data=8
+# T=7870.00 ns MEM_WRITE addr=48 data=1
+# T=7890.00 ns SUBS_X1X0 fetched X1=6 X0=7
+# T=7910.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=7910.00 ns FLAG_INSTR_EX busA=7 busB=7 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=7930.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=7990.00 ns FLAG_INSTR_EX busA=7 busB=1 aluOut=6 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=8110.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=8150.00 ns MEM_READ  addr=8 data=3
+# T=8170.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=8170.00 ns MEM_READ  addr=0 data=4
+# T=8190.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=8190.00 ns FLAG_INSTR_EX busA=4 busB=3 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=8210.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=8290.00 ns MEM_WRITE addr=8 data=4
+# T=8310.00 ns MEM_WRITE addr=0 data=3
+# T=8330.00 ns SUBS_X1X0 fetched X1=0 X0=6
+# T=8350.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=8350.00 ns FLAG_INSTR_EX busA=1 busB=6 aluOut=18446744073709551611 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=8370.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=8450.00 ns MEM_READ  addr=16 data=7
+# T=8470.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=8470.00 ns MEM_READ  addr=8 data=4
+# T=8490.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=8490.00 ns FLAG_INSTR_EX busA=4 busB=7 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=8510.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=8590.00 ns SUBS_X1X0 fetched X1=1 X0=6
+# T=8610.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=8610.00 ns FLAG_INSTR_EX busA=2 busB=6 aluOut=18446744073709551612 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=8630.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=8710.00 ns MEM_READ  addr=24 data=2
+# T=8730.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=8730.00 ns MEM_READ  addr=16 data=7
+# T=8750.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=8750.00 ns FLAG_INSTR_EX busA=7 busB=2 aluOut=5 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=8770.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=8850.00 ns MEM_WRITE addr=24 data=7
+# T=8870.00 ns MEM_WRITE addr=16 data=2
+# T=8890.00 ns SUBS_X1X0 fetched X1=2 X0=6
+# T=8910.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=8910.00 ns FLAG_INSTR_EX busA=3 busB=6 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=8930.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=9010.00 ns MEM_READ  addr=32 data=5
+# T=9030.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=9030.00 ns MEM_READ  addr=24 data=7
+# T=9050.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=9050.00 ns FLAG_INSTR_EX busA=7 busB=5 aluOut=2 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=9070.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=9150.00 ns MEM_WRITE addr=32 data=7
+# T=9170.00 ns MEM_WRITE addr=24 data=5
+# T=9190.00 ns SUBS_X1X0 fetched X1=3 X0=6
+# T=9210.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=9210.00 ns FLAG_INSTR_EX busA=4 busB=6 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=9230.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=9310.00 ns MEM_READ  addr=40 data=6
+# T=9330.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=9330.00 ns MEM_READ  addr=32 data=7
+# T=9350.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=9350.00 ns FLAG_INSTR_EX busA=7 busB=6 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=9370.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=9450.00 ns MEM_WRITE addr=40 data=7
+# T=9470.00 ns MEM_WRITE addr=32 data=6
+# T=9490.00 ns SUBS_X1X0 fetched X1=4 X0=6
+# T=9510.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=9510.00 ns FLAG_INSTR_EX busA=5 busB=6 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=9530.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=9610.00 ns MEM_READ  addr=48 data=1
+# T=9630.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=9630.00 ns MEM_READ  addr=40 data=7
+# T=9650.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=9650.00 ns FLAG_INSTR_EX busA=7 busB=1 aluOut=6 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=9670.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=9750.00 ns MEM_WRITE addr=48 data=7
+# T=9770.00 ns MEM_WRITE addr=40 data=1
+# T=9790.00 ns SUBS_X1X0 fetched X1=5 X0=6
+# T=9810.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=9810.00 ns FLAG_INSTR_EX busA=6 busB=6 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=9830.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=9890.00 ns FLAG_INSTR_EX busA=6 busB=1 aluOut=5 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=10010.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=10050.00 ns MEM_READ  addr=8 data=4
+# T=10070.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=10070.00 ns MEM_READ  addr=0 data=3
+# T=10090.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=10090.00 ns FLAG_INSTR_EX busA=3 busB=4 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=10110.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=10190.00 ns SUBS_X1X0 fetched X1=0 X0=5
+# T=10210.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=10210.00 ns FLAG_INSTR_EX busA=1 busB=5 aluOut=18446744073709551612 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=10230.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=10310.00 ns MEM_READ  addr=16 data=2
+# T=10330.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=10330.00 ns MEM_READ  addr=8 data=4
+# T=10350.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=10350.00 ns FLAG_INSTR_EX busA=4 busB=2 aluOut=2 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=10370.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=10450.00 ns MEM_WRITE addr=16 data=4
+# T=10470.00 ns MEM_WRITE addr=8 data=2
+# T=10490.00 ns SUBS_X1X0 fetched X1=1 X0=5
+# T=10510.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=10510.00 ns FLAG_INSTR_EX busA=2 busB=5 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=10530.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=10610.00 ns MEM_READ  addr=24 data=5
+# T=10630.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=10630.00 ns MEM_READ  addr=16 data=4
+# T=10650.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=10650.00 ns FLAG_INSTR_EX busA=4 busB=5 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=10670.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=10750.00 ns SUBS_X1X0 fetched X1=2 X0=5
+# T=10770.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=10770.00 ns FLAG_INSTR_EX busA=3 busB=5 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=10790.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=10870.00 ns MEM_READ  addr=32 data=6
+# T=10890.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=10890.00 ns MEM_READ  addr=24 data=5
+# T=10910.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=10910.00 ns FLAG_INSTR_EX busA=5 busB=6 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=10930.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=11010.00 ns SUBS_X1X0 fetched X1=3 X0=5
+# T=11030.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=11030.00 ns FLAG_INSTR_EX busA=4 busB=5 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=11050.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=11130.00 ns MEM_READ  addr=40 data=1
+# T=11150.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=11150.00 ns MEM_READ  addr=32 data=6
+# T=11170.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=11170.00 ns FLAG_INSTR_EX busA=6 busB=1 aluOut=5 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=11190.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=11270.00 ns MEM_WRITE addr=40 data=6
+# T=11290.00 ns MEM_WRITE addr=32 data=1
+# T=11310.00 ns SUBS_X1X0 fetched X1=4 X0=5
+# T=11330.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=11330.00 ns FLAG_INSTR_EX busA=5 busB=5 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=11350.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=11410.00 ns FLAG_INSTR_EX busA=5 busB=1 aluOut=4 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=11530.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=11570.00 ns MEM_READ  addr=8 data=2
+# T=11590.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=11590.00 ns MEM_READ  addr=0 data=3
+# T=11610.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=11610.00 ns FLAG_INSTR_EX busA=3 busB=2 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=11630.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=11710.00 ns MEM_WRITE addr=8 data=3
+# T=11730.00 ns MEM_WRITE addr=0 data=2
+# T=11750.00 ns SUBS_X1X0 fetched X1=0 X0=4
+# T=11770.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=11770.00 ns FLAG_INSTR_EX busA=1 busB=4 aluOut=18446744073709551613 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=11790.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=11870.00 ns MEM_READ  addr=16 data=4
+# T=11890.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=11890.00 ns MEM_READ  addr=8 data=3
+# T=11910.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=11910.00 ns FLAG_INSTR_EX busA=3 busB=4 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=11930.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=12010.00 ns SUBS_X1X0 fetched X1=1 X0=4
+# T=12030.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=12030.00 ns FLAG_INSTR_EX busA=2 busB=4 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=12050.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=12130.00 ns MEM_READ  addr=24 data=5
+# T=12150.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=12150.00 ns MEM_READ  addr=16 data=4
+# T=12170.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=12170.00 ns FLAG_INSTR_EX busA=4 busB=5 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=12190.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=12270.00 ns SUBS_X1X0 fetched X1=2 X0=4
+# T=12290.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=12290.00 ns FLAG_INSTR_EX busA=3 busB=4 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=12310.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=12390.00 ns MEM_READ  addr=32 data=1
+# T=12410.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=12410.00 ns MEM_READ  addr=24 data=5
+# T=12430.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=12430.00 ns FLAG_INSTR_EX busA=5 busB=1 aluOut=4 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=12450.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=12530.00 ns MEM_WRITE addr=32 data=5
+# T=12550.00 ns MEM_WRITE addr=24 data=1
+# T=12570.00 ns SUBS_X1X0 fetched X1=3 X0=4
+# T=12590.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=12590.00 ns FLAG_INSTR_EX busA=4 busB=4 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=12610.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=12670.00 ns FLAG_INSTR_EX busA=4 busB=1 aluOut=3 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=12790.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=12830.00 ns MEM_READ  addr=8 data=3
+# T=12850.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=12850.00 ns MEM_READ  addr=0 data=2
+# T=12870.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=12870.00 ns FLAG_INSTR_EX busA=2 busB=3 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=12890.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=12970.00 ns SUBS_X1X0 fetched X1=0 X0=3
+# T=12990.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=12990.00 ns FLAG_INSTR_EX busA=1 busB=3 aluOut=18446744073709551614 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=13010.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=13090.00 ns MEM_READ  addr=16 data=4
+# T=13110.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=13110.00 ns MEM_READ  addr=8 data=3
+# T=13130.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=13130.00 ns FLAG_INSTR_EX busA=3 busB=4 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=13150.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=13230.00 ns SUBS_X1X0 fetched X1=1 X0=3
+# T=13250.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=13250.00 ns FLAG_INSTR_EX busA=2 busB=3 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=13270.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=13350.00 ns MEM_READ  addr=24 data=1
+# T=13370.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=13370.00 ns MEM_READ  addr=16 data=4
+# T=13390.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=13390.00 ns FLAG_INSTR_EX busA=4 busB=1 aluOut=3 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=13410.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=13490.00 ns MEM_WRITE addr=24 data=4
+# T=13510.00 ns MEM_WRITE addr=16 data=1
+# T=13530.00 ns SUBS_X1X0 fetched X1=2 X0=3
+# T=13550.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=13550.00 ns FLAG_INSTR_EX busA=3 busB=3 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=13570.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=13630.00 ns FLAG_INSTR_EX busA=3 busB=1 aluOut=2 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=13750.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=13790.00 ns MEM_READ  addr=8 data=3
+# T=13810.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=13810.00 ns MEM_READ  addr=0 data=2
+# T=13830.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=13830.00 ns FLAG_INSTR_EX busA=2 busB=3 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=13850.00 ns BLT_NOSWAP neg=1 BrTaken=1 stall=0
+# T=13930.00 ns SUBS_X1X0 fetched X1=0 X0=2
+# T=13950.00 ns BLT_INNER neg=1 BrTaken=0 stall=1
+# T=13950.00 ns FLAG_INSTR_EX busA=1 busB=2 aluOut=18446744073709551615 neg=1 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=13970.00 ns BLT_INNER neg=1 BrTaken=1 stall=0
+# T=14050.00 ns MEM_READ  addr=16 data=1
+# T=14070.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=14070.00 ns MEM_READ  addr=8 data=3
+# T=14090.00 ns BLT_NOSWAP neg=1 BrTaken=0 stall=1
+# T=14090.00 ns FLAG_INSTR_EX busA=3 busB=1 aluOut=2 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=14110.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=14190.00 ns MEM_WRITE addr=16 data=3
+# T=14210.00 ns MEM_WRITE addr=8 data=1
+# T=14230.00 ns SUBS_X1X0 fetched X1=1 X0=2
+# T=14250.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=14250.00 ns FLAG_INSTR_EX busA=2 busB=2 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=14270.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=14330.00 ns FLAG_INSTR_EX busA=2 busB=1 aluOut=1 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=14450.00 ns FLAG_INSTR_EX busA=0 busB=0 aluOut=0 neg=0 ovf=0 fA=10 fB=10 Rn=1 Rm=1
+# T=14490.00 ns MEM_READ  addr=8 data=1
+# T=14510.00 ns SUBS_X2X3 in ID, X2 in pipeline X3 in pipeline
+# T=14510.00 ns MEM_READ  addr=0 data=2
+# T=14530.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=1
+# T=14530.00 ns FLAG_INSTR_EX busA=2 busB=1 aluOut=1 neg=0 ovf=0 fA=01 fB=00 Rn=2 Rm=3
+# T=14550.00 ns BLT_NOSWAP neg=0 BrTaken=0 stall=0
+# T=14630.00 ns MEM_WRITE addr=8 data=2
+# T=14650.00 ns MEM_WRITE addr=0 data=1
+# T=14670.00 ns SUBS_X1X0 fetched X1=0 X0=1
+# T=14690.00 ns BLT_INNER neg=0 BrTaken=0 stall=1
+# T=14690.00 ns FLAG_INSTR_EX busA=1 busB=1 aluOut=0 neg=0 ovf=0 fA=01 fB=00 Rn=1 Rm=0
+# T=14710.00 ns BLT_INNER neg=0 BrTaken=0 stall=0
+# T=14770.00 ns FLAG_INSTR_EX busA=1 busB=1 aluOut=0 neg=0 ovf=0 fA=00 fB=00 Rn=0 Rm=5
+# T=14850.00 ns MEM_READ  addr=0 data=1
+# T=14870.00 ns MEM_READ  addr=8 data=2
+# T=14890.00 ns MEM_READ  addr=16 data=3
+# T=14910.00 ns MEM_READ  addr=24 data=4
+# T=14930.00 ns MEM_READ  addr=32 data=5
+# T=14950.00 ns MEM_READ  addr=40 data=6
+# T=14970.00 ns MEM_READ  addr=48 data=7
+# T=14990.00 ns MEM_READ  addr=56 data=8
+# T=15010.00 ns MEM_READ  addr=64 data=9
+# T=15030.00 ns MEM_READ  addr=72 data=10
+# ** Note: $stop    : quad_testbench.sv(130)
+#    Time: 50100 ns  Iteration: 0  Instance: /quad_testbench
+# Break in Module quad_testbench at quad_testbench.sv line 130
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:03:41 on May 18,2026
+# vlog -reportprogress 300 AluControl.sv D_FF.sv D_FF16.sv D_FF32.sv D_FF4.sv D_FF5.sv D_FF64.sv D_FF_enable.sv D_FF_enable_neg.sv D_FF_neg.sv alu.sv bitSlice.sv branchingAdd.sv branchingLogic.sv cbz_FU.sv control.sv datamem.sv decoder2_4.sv decoder3_8.sv decoder5_32.sv dedALU4.sv ex_mem_reg.sv flagRegisters.sv forwarding_unit.sv fullAdder.sv halfAdder.sv hazard_detection_unit.sv id_ex_reg.sv if_id_reg.sv instructmem.sv math.sv mem_wb_reg.sv mux2_1.sv mux32_1.sv mux4_1.sv mux64_32_1.sv mux8_1.sv pcAdder4_tb.sv program_counter.sv quad.sv quad_og.sv quad_testbench.sv regfile.sv register_array.sv signExtender.sv zero_detector.sv 
+# -- Compiling module AluControl
+# -- Compiling module D_FF
+# -- Compiling module D_FF16
+# -- Compiling module D_FF32
+# -- Compiling module D_FF4
+# -- Compiling module D_FF5
+# -- Compiling module D_FF64
+# -- Compiling module D_FF_enable
+# -- Compiling module D_FF_enable_tb
+# -- Compiling module D_FF_enable_neg
+# -- Compiling module D_FF_neg
+# -- Compiling module alu
+# -- Compiling module bitSlice
+# -- Compiling module branchingAdd
+# -- Compiling module branchingLogic
+# -- Compiling module cbz_FU
+# -- Compiling module control
+# -- Compiling module datamem
+# -- Compiling module datamem_testbench
+# -- Compiling module decoder2_4
+# -- Compiling module decoder2_4_tb
+# -- Compiling module decoder3_8
+# -- Compiling module decoder3_8_tb
+# -- Compiling module decoder5_32
+# -- Compiling module decoder5_32_tb
+# -- Compiling module dedALU4
+# -- Compiling module dedALU4_testbench
+# -- Compiling module ex_mem_reg
+# -- Compiling module forwarding_unit
+# -- Compiling module fullAdder
+# -- Compiling module halfAdder
+# -- Compiling module hazard_detection_unit
+# -- Compiling module id_ex_reg
+# -- Compiling module if_id_reg
+# -- Compiling module instructmem
+# -- Compiling module instructmem_testbench
+# -- Compiling module mult
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# -- Compiling module mult_testbench
+# -- Compiling module mem_wb_reg
+# -- Compiling module mux2_1
+# -- Compiling module mux32_1
+# -- Compiling module mux32_1_tb
+# -- Compiling module mux4_1
+# -- Compiling module mux64_32_1
+# -- Compiling module mux8_1
+# -- Compiling module pcAdder4_tb
+# -- Compiling module program_counter
+# -- Compiling module quad
+# -- Compiling module quad_og
+# -- Compiling module quad_testbench
+# -- Compiling module regfile
+# -- Compiling module register_array
+# -- Compiling module signExtender
+# -- Compiling module signExtender_tb
+# -- Compiling module zero_detector
+# 
+# Top level modules:
+# 	D_FF_enable_tb
+# 	datamem_testbench
+# 	decoder2_4_tb
+# 	decoder3_8_tb
+# 	decoder5_32_tb
+# 	dedALU4_testbench
+# 	instructmem_testbench
+# 	shifter_testbench
+# 	mult_testbench
+# 	mux32_1_tb
+# 	pcAdder4_tb
+# 	quad_og
+# 	quad_testbench
+# 	register_array
+# 	signExtender_tb
+# End time: 22:03:42 on May 18,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 22:03:43 on May 18,2026, Elapsed time: 0:06:04
+# Errors: 0, Warnings: 6
+# vsim -voptargs=""+acc"" -t 1ps -lib work quad_testbench 
+# Start time: 22:03:43 on May 18,2026
+# Loading sv_std.std
+# Loading work.quad_testbench
+# Loading work.quad
+# Loading work.D_FF_enable
+# Loading work.D_FF
+# Loading work.program_counter
+# Loading work.D_FF32
+# Loading work.D_FF16
+# Loading work.D_FF4
+# Loading work.instructmem
+# Loading work.dedALU4
+# Loading work.halfAdder
+# Loading work.if_id_reg
+# Loading work.D_FF64
+# Loading work.signExtender
+# Loading work.mux2_1
+# Loading work.regfile
+# Loading work.decoder5_32
+# Loading work.decoder2_4
+# Loading work.decoder3_8
+# Loading work.mux64_32_1
+# Loading work.control
+# Loading work.hazard_detection_unit
+# Loading work.cbz_FU
+# Loading work.zero_detector
+# Loading work.branchingAdd
+# Loading work.shifter
+# Loading work.alu
+# Loading work.branchingLogic
+# Loading work.id_ex_reg
+# Loading work.D_FF5
+# Loading work.forwarding_unit
+# Loading work.mux4_1
+# Loading work.AluControl
+# Loading work.ex_mem_reg
+# Loading work.datamem
+# Loading work.mem_wb_reg
+# Loading work.mux32_1
+# Loading work.mux8_1
+# Loading work.bitSlice
+# Loading work.fullAdder
+# ** Warning: (vsim-3017) quad.sv(393): [TFMPC] - Too few port connections. Expected 24, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /quad_testbench/dut/exmem File: ex_mem_reg.sv
+# ** Warning: (vsim-3722) quad.sv(393): [TFMPC] - Missing connection for port 'setFlags_in'.
+# ** Warning: (vsim-3722) quad.sv(393): [TFMPC] - Missing connection for port 'setFlags_out'.
+# ** Warning: Design size of 9921 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Hemil  Hostname: DESKTOP-QOI84KS  ProcessID: 17224
+#           Attempting to use alternate WLF file "./wlfterfj5n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfterfj5n
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Running benchmark: ./benchmarks/test11_Sort.arm
+# ** Note: $stop    : quad_testbench.sv(130)
+#    Time: 50100 ns  Iteration: 0  Instance: /quad_testbench
+# Break in Module quad_testbench at quad_testbench.sv line 130
+# End time: 22:11:21 on May 18,2026, Elapsed time: 0:07:38
+# Errors: 0, Warnings: 6
