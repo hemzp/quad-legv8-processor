@@ -1,4 +1,4 @@
-# QuadCore-5 — A 5-Stage Pipelined ARMv8 (LEGv8) CPU
+# Quad ARMv8 (LEGv8) CPU
 
 A gate-level, 64-bit pipelined processor implementing a teaching subset of ARMv8 (LEGv8), written in SystemVerilog and simulated in ModelSim. The datapath is built from primitive gates (`and`, `or`, `not`, `xor`, custom D-flip-flops with explicit `#delay`); only the three control modules — `control`, `hazard_detection_unit`, `forwarding_unit`, plus the small `cbz_FU` — use behavioral RTL.
 
